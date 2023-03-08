@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tick calculator</title>
+</head>
+<body>
+    <!-- load script -->
+    <script src="index.js"></script>
+
+    <h3>Tick calculator</h3>
+    
+    <!-- select calculator type -->
+    <label for="type">calculator type</label>
+    <select id="type">
+        <option value="time_tick">time to tick</option>
+        <option value="tick_time">tick to time</option>
+    </select><br><br>
+
+    <!-- input -->
+    <input type="text" id="ms">
+    <label for="ms">millisecond</label><br><br>
+    <input type="text" id="sec">
+    <label for="sec">seconds</label><br><br>
+    <input type="text" id="min">
+    <label for="min">minute</label><br><br>
+    <input type="text" id="hour">
+    <label for="hour">hour</label><br><br>
+    <input type="text" id="tick">
+    <label for="tick">tick</label><br><br>
+    
+    <!-- submit -->
+    <button onclick="cal()">submit</button>
+
+    <!-- clear all -->
+    <button onclick="clear_all()">clear all</button>
+
+    <!-- show error -->
+    <p id="error"></p>
+</body>
+</html>
