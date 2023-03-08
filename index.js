@@ -37,7 +37,6 @@ function cal(){
     }
 }
 function clear_all(){
-    cal_type = document.getElementById("type").value
     ms = document.getElementById("ms").value
     sec = document.getElementById("sec").value
     min = document.getElementById("min").value
@@ -45,7 +44,6 @@ function clear_all(){
     tick = document.getElementById("tick").value
     error_ = document.getElementById("error")
 
-    document.getElementById("type").value=""
     document.getElementById("ms").value=""
     document.getElementById("sec").value=""
     document.getElementById("min").value=""
